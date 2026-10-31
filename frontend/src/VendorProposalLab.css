@@ -1,0 +1,397 @@
+
+.proposal-lab {
+  color: #e8eef5;
+  width: 100%;
+  padding: 28px;
+}
+
+.proposal-header,
+.proposal-section-heading,
+.panel-heading,
+.table-heading,
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.proposal-eyebrow,
+.proposal-recommendation span {
+  color: #22d3b5;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.proposal-header h1 {
+  font-size: 30px;
+  margin: 12px 0 8px;
+}
+
+.proposal-header p,
+.proposal-section-heading p,
+.panel-heading p,
+.table-heading p,
+.form-heading p {
+  color: #8295aa;
+  font-size: 13px;
+  margin: 0;
+}
+
+.proposal-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #18bfa5;
+  color: #061b1c;
+  border: none;
+  padding: 12px 17px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.proposal-add-btn:hover {
+  background: #36dfc2;
+}
+
+.proposal-input-panel,
+.proposal-form,
+.proposal-table-panel {
+  background: #101c2a;
+  border: 1px solid #243549;
+  border-radius: 12px;
+  padding: 22px;
+  margin-top: 24px;
+}
+
+.panel-heading {
+  justify-content: flex-start;
+}
+
+.panel-icon {
+  background: #153d3b;
+  color: #22d3b5;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.panel-heading h3,
+.table-heading h3,
+.form-heading h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.usage-input {
+  margin-top: 22px;
+  max-width: 350px;
+}
+
+.usage-input label,
+.form-field label {
+  display: block;
+  color: #a9b9ca;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.usage-input input,
+.form-field input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #08121e;
+  color: #edf5fb;
+  border: 1px solid #30445b;
+  border-radius: 7px;
+  padding: 12px;
+  outline: none;
+}
+
+.usage-input input:focus,
+.form-field input:focus {
+  border-color: #20cdb2;
+}
+
+.usage-input span {
+  display: block;
+  margin-top: 9px;
+  color: #748ba2;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.proposal-form {
+  border-color: #1c9c89;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.form-field input {
+  min-width: 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cancel-btn,
+.reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  border: 1px solid #34465a;
+  color: #aebed0;
+  padding: 10px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.proposal-section-heading {
+  margin-top: 36px;
+}
+
+.proposal-section-heading h2 {
+  font-size: 19px;
+  margin: 0 0 7px;
+}
+
+.proposal-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.proposal-metric {
+  background: #101c2a;
+  border: 1px solid #243549;
+  padding: 19px;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.metric-top {
+  display: flex;
+  justify-content: space-between;
+  color: #91a6bb;
+  font-size: 12px;
+}
+
+.metric-top svg {
+  color: #20d3b4;
+}
+
+.proposal-metric strong {
+  display: block;
+  font-size: 27px;
+  margin: 20px 0 10px;
+}
+
+.proposal-metric .best-name {
+  font-size: 21px;
+}
+
+.proposal-metric small {
+  color: #71869c;
+  font-size: 11px;
+}
+
+.proposal-table-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.table-heading {
+  padding: 22px;
+}
+
+.live-indicator {
+  color: #24d6b8;
+  font-size: 9px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.live-indicator span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #24d6b8;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.proposal-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.proposal-table th {
+  color: #8499ad;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 15px;
+  background: #0a1521;
+  border-top: 1px solid #26374b;
+}
+
+.proposal-table td {
+  padding: 17px 15px;
+  border-top: 1px solid #213044;
+  font-size: 12px;
+  color: #b7c6d5;
+}
+
+.vendor-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e8f0f8;
+  font-weight: 700;
+}
+
+.vendor-name svg {
+  color: #22cdb1;
+}
+
+.best-proposal-row {
+  background: rgba(24, 191, 165, 0.07);
+}
+
+.recommended-label {
+  display: inline-block;
+  color: #24d6b8;
+  font-size: 9px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.cost-cell {
+  color: #f1f6fb !important;
+  font-weight: 800;
+}
+
+.positive-cell {
+  color: #35d6a5 !important;
+}
+
+.negative-cell {
+  color: #ff8989 !important;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #8296aa;
+  cursor: pointer;
+  padding: 7px;
+}
+
+.delete-btn:hover {
+  color: #ff7777;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 35px !important;
+}
+
+.proposal-recommendation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(110deg, #10342f, #122535);
+  border: 1px solid #236657;
+  border-radius: 10px;
+  padding: 21px;
+  margin-top: 22px;
+}
+
+.recommendation-icon {
+  color: #35dbb5;
+  background: #174b40;
+  padding: 12px;
+  border-radius: 9px;
+}
+
+.recommendation-content {
+  flex: 1;
+}
+
+.proposal-recommendation h3 {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.proposal-recommendation p,
+.proposal-recommendation small {
+  color: #b1c4d0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.proposal-recommendation small {
+  color: #7eaa9e;
+}
+
+.proposal-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 20px;
+  color: #778ba0;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.proposal-disclaimer svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .proposal-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .proposal-lab {
+    padding: 15px;
+  }
+
+  .proposal-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proposal-section-heading {
+    align-items: flex-start;
+  }
+}

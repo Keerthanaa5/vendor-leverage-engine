@@ -1,16 +1,17 @@
 ﻿
 import { useEffect, useState } from "react";
 import {
-  AreaChart, Area, BarChart, Bar, XAxis, YAxis,
+  AreaChart, Area, XAxis, YAxis,
   CartesianGrid, Tooltip, ResponsiveContainer
 } from "recharts";
 
 import {
   LayoutDashboard, Activity, BrainCircuit, FileText,
   SlidersHorizontal, Zap, Cpu, DollarSign,
-  TrendingUp, ShieldCheck, RefreshCw
+  TrendingUp, ShieldCheck, RefreshCw, Building2
 } from "lucide-react";
 
+import VendorProposalLab from "./VendorProposalLab";
 import "./App.css";
 
 const API = "http://localhost:5000";
@@ -113,6 +114,7 @@ function App() {
     ["Overview", LayoutDashboard],
     ["Usage Analytics", Activity],
     ["Forecasting", BrainCircuit],
+    ["Vendor Proposal Lab", Building2],
     ["Contract Simulator", SlidersHorizontal],
     ["Optimization", Zap],
     ["Negotiation Report", FileText]
@@ -508,6 +510,7 @@ function App() {
     "Overview": renderOverview,
     "Usage Analytics": renderUsage,
     "Forecasting": renderForecasting,
+    "Vendor Proposal Lab": () => <VendorProposalLab />,
     "Contract Simulator": renderSimulator,
     "Optimization": renderOptimization,
     "Negotiation Report": renderNegotiation
@@ -577,13 +580,17 @@ function App() {
               {active === "Overview" ? "Command Center" : active}
             </h1>
             <p>
-              Turn usage intelligence into stronger vendor negotiations.
+              {active === "Vendor Proposal Lab"
+                ? "Compare vendor contracts and identify better pricing opportunities."
+                : "Turn usage intelligence into stronger vendor negotiations."}
             </p>
           </div>
 
-          <button className="refresh-btn" onClick={loadData}>
-            <RefreshCw size={15}/> Refresh data
-          </button>
+          {active !== "Vendor Proposal Lab" && (
+            <button className="refresh-btn" onClick={loadData}>
+              <RefreshCw size={15}/> Refresh data
+            </button>
+          )}
         </section>
 
         {error && <div className="error-box">{error}</div>}
